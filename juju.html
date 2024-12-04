@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reborn Femboy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #counter {
+            font-size: 24px;
+            color: #2ecc71;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #message {
+            text-align: center;
+            font-size: 36px;
+            color: #3498db;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; font-family: Arial, sans-serif; color: #3498db;">
+        Reborn Femboy
+    </h1>
+
+    <!-- Imagen estática -->
+    <div style="text-align: center;">
+        <img src="file:///C:/Users/usuario/Downloads/97be4dbaa07dbf67fd092eb2dc229174.jpg" alt="Imagen Reborn espera a que llegue a 100" style="width: 300px; height: auto;">
+    </div>
+
+    <!-- Contador -->
+    <div id="counter">Contador: 0</div>
+
+    <!-- Mensaje -->
+    <div id="message">Reborn Femboy</div>
+
+    <script>
+        // Inicialización del contador
+        let counter = 0;
+        let counterElement = document.getElementById("counter");
+        let messageElement = document.getElementById("message");
+
+        // Función para actualizar el contador
+        function updateCounter() {
+            if (counter < 100) {
+                counter++; // Incrementa el contador
+                counterElement.textContent = "Contador: " + counter; // Actualiza el contador en la página
+            } else {
+                messageElement.textContent = "Reborn Gay"; // Cambia el mensaje cuando llega a 100
+            }
+        }
+
+        // Llamamos a la función cada 100 milisegundos para incrementar el contador
+        setInterval(updateCounter, 100);
+    </script>
+</body>
+</html>
